@@ -1,3 +1,22 @@
 <resources>
-    <string name="app_name">Cesta Básica</string>
+    <string name="app_name">Cesta Básica Caicó</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="consultar">Consultar</string>
+
+    <string name="sobre">Sobre</string>
+    <string name="info"> A cesta básica, que favorece às famílias de baixa renda, foi estabelecida através de decreto e é divulgada,
+        mês a mês, para que estas famílias possam adquirir produtos básicos para sua alimentação em estabelecimentos que os ofertem de forma mais barata. Assim sendo,
+        realçamos a importância de fazermos pesquisas que respondam aos problemas propostos numa sociedade de desigualdades sociais que, cada vez mais,
+        afeta a qualidade de vida dos menos favorecidos, sobretudo aos que pertencem a uma família com rendimento em torno de um salário mínimo.
+        A coleta de dados será mensal e envolverá alunos dos cursos de graduação dos Cursos de Sistemas de Informação, Matemática e Ciências Contábeis,
+        que serão supervisionados pelo coordenador da pesquisa Almir Miranda. Os preços dos produtos da Cesta Básica serão coletados na segunda quinzena de cada mês.
+        Os dados coletados serão trabalhados e a divulgação final dos resultados se dará até o final do mesmo mês, através dos meios de comunicação locais.
+        Espera-se com este projeto que a população seridoense fique informada acerca dos preços dos produtos da Cesta Básica,
+        de como encontrar tais produtos de forma mais barata e também de ter um acompanhamento, mês a mês, do índice de variação, em termos percentuais.
+        Pretende-se também provocar uma concorrência entre os estabelecimentos que serão incluídos desta pesquisa.
+        As famílias seridoenses serão diretamente beneficiadas com este Projeto de Pesquisa. Os alunos inseridos neste trabalho poderão aliar conhecimentos adquiridos em sala de aula com uma vivência prática,
+        tanto no campo da estatística aplicada como no da matemática financeira e também na área de sistemas de informação.</string>
+
+    <string name="sair">Sair</string>
+    <string name="compartilhar">Compartilhar</string>
 </resources>

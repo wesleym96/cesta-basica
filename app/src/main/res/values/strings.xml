@@ -19,4 +19,11 @@
 
     <string name="sair">Sair</string>
     <string name="compartilhar">Compartilhar</string>
+
+    <string name="supermercado">Supermercado:</string>
+    <string name="data">Data de realização:</string>
+
+    <string name="produto">Produto:</string>
+    <string name="tipo">Tipo:</string>
+    <string name="preco">Preço:</string>
 </resources>

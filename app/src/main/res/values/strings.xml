@@ -26,4 +26,23 @@
     <string name="produto">Produto:</string>
     <string name="tipo">Tipo:</string>
     <string name="preco">Preço:</string>
+
+    <string name="adicionar">Adicionar</string>
+    <string name="cancelar">Cancelar</string>
+
+    <string-array name="produto">
+        <item>Selecione</item>
+        <item>Carne Bovina</item>
+        <item>Leite Integral</item>
+        <item>Feijão Tipo 1</item>
+        <item>Arroz Tipo 1 Parbolizado</item>
+        <item>Farinha de Mandioca</item>
+        <item>Tomate</item>
+        <item>Pão</item>
+        <item>Café em Pó</item>
+        <item>Açúcar</item>
+        <item>Banana</item>
+        <item>Óleo de Soja</item>
+        <item>Manteiga</item>
+    </string-array>
 </resources>

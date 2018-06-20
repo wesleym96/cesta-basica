@@ -1,12 +1,18 @@
 package br.com.wesley.cestabsica;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
+
+    Button bt_cadastrar;
+    Button bt_consultar;
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -37,5 +43,24 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
+
+        bt_cadastrar = (Button) findViewById(R.id.bt_cadastrar);
+        bt_consultar = (Button) findViewById(R.id.bt_consultar);
+
+        bt_cadastrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, CadastrarActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        bt_consultar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Intent intent = Intent(MainActivity.this);
+                finish();
+            }
+        });
     }
 }

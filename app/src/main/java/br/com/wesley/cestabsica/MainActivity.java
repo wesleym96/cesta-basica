@@ -1,5 +1,7 @@
 package br.com.wesley.cestabsica;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -26,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         if (id == R.id.sair) {
-            finish();
+            sair();
             return true;
         }
 
@@ -62,5 +64,23 @@ public class MainActivity extends AppCompatActivity {
                 finish();
             }
         });
+    }
+
+    public void onBackPressed(){
+        sair();
+    }
+    public void sair(){
+        new AlertDialog
+                .Builder(this)
+                .setMessage("Deseja realmente sair?")
+                .setCancelable(false)
+                .setPositiveButton("Sim", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int id) {
+                        MainActivity.this.finish();
+                    }
+                })
+                .setNegativeButton("Não", null)
+                .show();
     }
 }

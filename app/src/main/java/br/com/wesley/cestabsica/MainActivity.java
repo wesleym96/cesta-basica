@@ -3,6 +3,7 @@ package br.com.wesley.cestabsica;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -33,9 +34,20 @@ public class MainActivity extends AppCompatActivity {
         }
 
         if (id == R.id.sobre) {
-            finish();
+            sobre();
             return true;
         }
+
+        if (id == R.id.contato) {
+            contato();
+            return true;
+        }
+
+        if (id == R.id.compartilhar) {
+            compartilhar();
+            return true;
+        }
+
         return false;
     }
 
@@ -82,5 +94,38 @@ public class MainActivity extends AppCompatActivity {
                 })
                 .setNegativeButton("Não", null)
                 .show();
+    }
+
+    public void sobre(){
+        String info = getString(R.string.info);
+        new AlertDialog
+                .Builder(this)
+                .setMessage(info)
+                .setCancelable(false)
+                .setNegativeButton("Ok", null)
+                .show();
+    }
+
+    public void contato(){
+        new AlertDialog
+                .Builder(this)
+                .setMessage("Deseja contatar o responsável?")
+                .setCancelable(false)
+                .setPositiveButton("Sim", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int id) {
+                        String tel = "999939079";
+                        Intent intentLiga = new Intent();
+                        intentLiga.setAction(Intent.ACTION_DIAL);
+                        intentLiga.setData(Uri.parse("tel:" + tel));
+                        startActivity(intentLiga);
+                    }
+                })
+                .setNegativeButton("Não", null)
+                .show();
+    }
+
+    public void compartilhar(){
+        finish();
     }
 }

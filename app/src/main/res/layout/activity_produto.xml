@@ -68,18 +68,21 @@
             android:orientation="vertical">
 
             <Spinner
-                android:id="@+id/spinner"
+                android:id="@+id/sp_produto"
                 android:layout_width="match_parent"
                 android:layout_height="42dp"
                 android:entries="@array/produto" />
 
-            <Spinner
-                android:id="@+id/spinner2"
+            <EditText
+                android:id="@+id/et_marca"
                 android:layout_width="match_parent"
-                android:layout_height="42dp" />
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                tools:text="@string/marca" />
 
             <EditText
-                android:id="@+id/editText"
+                android:id="@+id/et_preco"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -88,7 +91,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/bt_adicionar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/shapevd"
@@ -96,13 +99,13 @@
         android:textColor="@color/branco"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button6"
+        app:layout_constraintEnd_toStartOf="@+id/bt_cancelar"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/bt_cancelar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/shapevr"
@@ -112,6 +115,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button5"
+        app:layout_constraintStart_toEndOf="@+id/bt_adicionar"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
 </android.support.constraint.ConstraintLayout>

@@ -8,6 +8,12 @@
 
         app:showAsAction="never" />
 
+    <item android:id="@+id/contato"
+        android:icon="@drawable/ic_phone"
+        android:title="@string/contato"
+
+        app:showAsAction="never" />
+
     <item android:id="@+id/sair"
         android:icon="@drawable/ic_power"
         android:title="@string/sair"

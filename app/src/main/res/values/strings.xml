@@ -16,16 +16,19 @@
         Pretende-se também provocar uma concorrência entre os estabelecimentos que serão incluídos desta pesquisa.
         As famílias seridoenses serão diretamente beneficiadas com este Projeto de Pesquisa. Os alunos inseridos neste trabalho poderão aliar conhecimentos adquiridos em sala de aula com uma vivência prática,
         tanto no campo da estatística aplicada como no da matemática financeira e também na área de sistemas de informação.</string>
+    <string name="contato">Contato</string>
 
     <string name="sair">Sair</string>
     <string name="compartilhar">Compartilhar</string>
 
     <string name="supermercado">Supermercado:</string>
     <string name="data">Data de realização:</string>
+    <string name="finalizar">Finalizar Pesquisa</string>
 
     <string name="produto">Produto:</string>
     <string name="tipo">Tipo:</string>
     <string name="preco">Preço:</string>
+    <string name="marca">Marca</string>
 
     <string name="adicionar">Adicionar</string>
     <string name="cancelar">Cancelar</string>
